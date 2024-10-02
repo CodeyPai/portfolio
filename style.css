@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Root Variables for Colors */
+:root {
+    --navbar-link-color: #495b99; /* Navbar Link Color */
+    --hover-color: #7d35f0; /* Link Hover Color */
+    --scrollbar-bg: rgb(70, 69, 69); /* Scrollbar Track Color */
+    --scrollbar-thumb-bg: linear-gradient(135deg, #3331bb 0%, #2696b8 100%); /* Scrollbar Thumb Color */
+}
+
+/* General Styles */
+body {
+    font-family: "Jost", sans-serif;   
+    background-color: #343a40;
+    color: #76d9eb;
+}
+
+/* Text Styles */
+h1, h2, p, .lead {
+    color: #fdfdfd !important;
+}
+
+.text-primary {
+    color: #9abde2 !important;
+}
+
+
+img {
+    max-width: 100%; /* Ensures responsive images */
+}
+
+.content {
+    background: linear-gradient(135deg, #373B44 0%, #4286f4 100%);
+}
+
+/* Navbar Styles */
+.nav-link {
+    color: var(--navbar-link-color);
+    transition: color 0.7s, text-decoration 0.7s; /* Separate transitions for clarity */
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+    text-decoration: underline; /* Changed to default underline */
+    text-decoration-color: #1639d8; /* Custom underline color */
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb-bg);
+}
+
+
+/* Invert Effect for Logo */
+.invert_effect {
+    filter: invert(100%);
+}
+
+/* Custom Border */
+.custom-border {
+    border-color: rgb(3, 17, 26) !important; /* Change this to your desired color */
+    transition: transform 0.3s ease;
+}
+
+/* Project Card Styles */
+.project-card {
+    background-color: #495057; /* Dark grey background for project cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    padding: 15px; /* Inner padding for aesthetics */
+    transition: transform 0.3s ease; /* Scale effect on hover for interactivity */
+}
+
+.project-card:hover {
+    transform: scale(1.02); /* Scale effect on hover for interactivity */
+}
+
+/* Button Styles */
+.btn-warning {
+    background-color: #079cff; /* Bootstrap warning color for buttons */
+    border: none; /* Remove default button border */
+    transition: background-color 0.3s ease;
+}
+
+.btn-warning:hover {
+    background-color: #2f325c; /* Darken button on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust base font size for smaller screens */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Increase link size for easier tapping */
+    }
+
+    /* Additional styles for small screens can be added here */
+}
